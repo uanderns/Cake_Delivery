@@ -27,7 +27,7 @@ export function Header() {
             <div className={styles.logo}>
                 <div className={styles.icon}></div>
                 <div className={styles.title}>
-                    <span>My Delivery</span>
+                    <span>CakeDelivery</span>
                 </div>
             </div>
             {

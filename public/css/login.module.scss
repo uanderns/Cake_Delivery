@@ -50,6 +50,7 @@
                         color: $primaryColor;
                         font-size: 32px;
                     }
+                 
                 }
                 .boxContent {
                     width: 100%;
@@ -62,9 +63,30 @@
                         border-radius: 10px;
                         border: 1px solid $grayDarkColor;
                         background-color: #fff;
-                        padding: 10px 20px;
+                        
                         outline: 0;
                     }
+                    label{
+                        padding: 0 20px;
+
+                    }
+
+                    select{
+
+                        
+                        cursor: pointer;
+                        border-radius: 10px;
+
+                        height: 50px;
+                        margin: 10px 0;
+                        width: 100%;
+                        padding: 0 20px;
+                        border: 1px solid $grayDarkColor;
+                        background-color: #fff;
+                        outline: 0;
+                        
+                    }
+                 
                 }
                 .boxActions {
                     width: 100%;

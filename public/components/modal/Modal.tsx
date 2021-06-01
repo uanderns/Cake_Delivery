@@ -25,14 +25,14 @@ export function ModalNovoProduto() {
                 <div className={style.modalNovoProduto} >
                     <div className={style.header}>
                         <div className={style.title}>
-                            <span>NOVO PRODUTO</span>
+                            <span>NOVO BOLO</span>
                         </div>
                         <div className={style.close}>
                             <img src="/images/close.svg" alt="Fechar Modal" onClick={() => closeModal()} />
                         </div>
                     </div>
                     <div className={style.content}>
-                        <Input type={"text"} placeholder={"Nome do produto"} size={'x100'} />
+                        <Input type={"text"} placeholder={"Nome do bolo"} size={'x100'} />
                         <Input type={"number"} placeholder={"Preço"} size={'x100'} />
                         <Input type={"text"} placeholder={"Descrição"} size={'x100'} />
                     </div>

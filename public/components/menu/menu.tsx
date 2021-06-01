@@ -28,8 +28,13 @@ export function Menu() {
             <ul>
                 {
                     URL == `/${routerEnum.CARDAPIO}` &&
-                    <li onClick={clickEvent}>Cadastrar Produto</li>
+                    <li onClick={clickEvent}>Cadastrar Bolo</li>
                 }
+
+                <li onClick={() => router.push(routerEnum.CARDAPIO)}>Cadastrar Sabor</li>
+                <li onClick={() => router.push(routerEnum.CARDAPIO)}>Cadastrar Tipo</li>
+                <li onClick={() => router.push(routerEnum.CARDAPIO)}>Cadastrar Tamanho</li>
+                
                 <li onClick={() => router.push(routerEnum.CARDAPIO)}>Cardápio</li>
                 <li onClick={() => router.push(routerEnum.LISTA_PEDIDOS)}>Lista de Pedidos</li>
             </ul>

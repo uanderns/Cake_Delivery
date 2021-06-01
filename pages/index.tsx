@@ -54,6 +54,17 @@ const Login = () => {
                                 <div className={styles.boxContent}>
                                     <Input type={"text"} placeholder={"Nome"} />
                                     <Input type={"text"} placeholder={"Email"} />
+                                    <Input type={"text"} placeholder={"Telefone"} />
+                                    <Input type={"date"} placeholder={"Data de Nascimento"} />
+                                  
+                                  <label htmlFor="sexo">Sexo:</label> 
+                                    <select name= "sexo" id="sexo">
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminino">Feminino</option>
+                                        <option value="outros">Outros</option>
+                                    </select>
+                                                                      
+
                                     <Input type={"password"} placeholder={"Senha"} />
                                     <Input type={"password"} placeholder={"Confirme sua senha"} />
                                 </div>

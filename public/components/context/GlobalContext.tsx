@@ -15,6 +15,12 @@ export type GlobalContent = {
     setProdutoSelected: (p: boolean) => void
     showModalProduto: boolean
     setShowModalProduto: (v: boolean) => void
+    showModalSabor: boolean
+    setShowModalSabor: (v: boolean) => void
+    showModalTipo: boolean
+    setShowModalTipo: (v: boolean) => void
+    showModalTamanho: boolean
+    setShowModalTamanho: (v: boolean) => void
     showModalEsqueciSenha: boolean
     setShowModalEsqueciSenha: (s: boolean) => void
 };
@@ -34,6 +40,12 @@ export const MyGlobalContext = createContext<GlobalContent>({
     setProdutoSelected: () => { },
     showModalProduto: false,
     setShowModalProduto: () => { },
+    showModalSabor: false,
+    setShowModalSabor: () => { },
+    showModalTipo: false,
+    setShowModalTipo: () => { },
+    showModalTamanho: false,
+    setShowModalTamanho: () => { },
     showModalEsqueciSenha: false,
     setShowModalEsqueciSenha: () => { }
 });

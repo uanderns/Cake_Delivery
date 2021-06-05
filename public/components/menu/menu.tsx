@@ -9,7 +9,7 @@ export function Menu() {
 
     const router = useRouter();
 
-    const { setShowModalProduto } = useContext(MyGlobalContext);
+    const { setShowModalProduto, setShowModalSabor, setShowModalTipo, setShowModalTamanho } = useContext(MyGlobalContext);
     const [URL, setURL] = useState(router.pathname);
 
     useEffect(() => {
@@ -19,22 +19,36 @@ export function Menu() {
         changeURL();
     }, []);
 
-    const clickEvent = () => {
+    const clickEventBolo = () => {
         setShowModalProduto(true);
     }
-    
+
+    const clickEventSabor = () => {
+        setShowModalSabor(true);
+    }
+
+    const clickEventTipo = () => {
+        setShowModalTipo(true);
+    }
+
+    const clickEventTamanho = () => {
+        setShowModalTamanho(true);
+    }
+
     return (
         <div className={styles.menu}>
             <ul>
                 {
                     URL == `/${routerEnum.CARDAPIO}` &&
-                    <li onClick={clickEvent}>Cadastrar Bolo</li>
+                    <>
+                        <li onClick={clickEventBolo}>Cadastrar Bolo</li>
+                        <li onClick={clickEventSabor}>Cadastrar Sabor</li>
+                        <li onClick={clickEventTipo}>Cadastrar Tipo</li>
+                        <li onClick={clickEventTamanho}>Cadastrar Tamanho</li>
+                    </>
                 }
 
-                <li onClick={() => router.push(routerEnum.CARDAPIO)}>Cadastrar Sabor</li>
-                <li onClick={() => router.push(routerEnum.CARDAPIO)}>Cadastrar Tipo</li>
-                <li onClick={() => router.push(routerEnum.CARDAPIO)}>Cadastrar Tamanho</li>
-                
+
                 <li onClick={() => router.push(routerEnum.CARDAPIO)}>Cardápio</li>
                 <li onClick={() => router.push(routerEnum.LISTA_PEDIDOS)}>Lista de Pedidos</li>
             </ul>

@@ -34,7 +34,12 @@ export function ModalNovoProduto() {
                     <div className={style.content}>
                         <Input type={"text"} placeholder={"Nome do bolo"} size={'x100'} />
                         <Input type={"number"} placeholder={"Preço"} size={'x100'} />
-                        <Input type={"text"} placeholder={"Descrição"} size={'x100'} />
+                        <Input type={"text"} placeholder={"Link da Imagem do bolo"} size={'x100'} />
+                        <Input type={"text"} placeholder={"Informe o sabor do bolo"} size={'x100'} />
+                        <Input type={"text"} placeholder={"Informe a descrição"} size={'x100'} />
+                        <Input type={"text"} placeholder={"Informe o tipo do bolo"} size={'x100'} />
+                        <Input type={"text"} placeholder={"Informe o tamanho do bolo"} size={'x100'} />
+
                     </div>
                     <div className={style.actions}>
                         <div className={style.btnSalvar} onClick={(e) => clickEvent(e, 'success')}>
@@ -76,9 +81,9 @@ export function ModalNovoSabor() {
                         </div>
                     </div>
                     <div className={style.content}>
-                        <Input type={"text"} placeholder={"Nome do bolo"} size={'x100'} />
-                        <Input type={"number"} placeholder={"Preço"} size={'x100'} />
+                        <Input type={"text"} placeholder={"Nome do sabor"} size={'x100'} />
                         <Input type={"text"} placeholder={"Descrição"} size={'x100'} />
+                        
                     </div>
                     <div className={style.actions}>
                         <div className={style.btnSalvar} onClick={(e) => clickEvent(e, 'success')}>
@@ -120,9 +125,8 @@ export function ModalNovoTipo() {
                         </div>
                     </div>
                     <div className={style.content}>
-                        <Input type={"text"} placeholder={"Nome do bolo"} size={'x100'} />
-                        <Input type={"number"} placeholder={"Preço"} size={'x100'} />
-                        <Input type={"text"} placeholder={"Descrição"} size={'x100'} />
+                        <Input type={"text"} placeholder={"Informe o nome do tipo"} size={'x100'} />
+                       
                     </div>
                     <div className={style.actions}>
                         <div className={style.btnSalvar} onClick={(e) => clickEvent(e, 'success')}>
@@ -164,9 +168,8 @@ export function ModalNovoTamanho() {
                         </div>
                     </div>
                     <div className={style.content}>
-                        <Input type={"text"} placeholder={"Nome do bolo"} size={'x100'} />
-                        <Input type={"number"} placeholder={"Preço"} size={'x100'} />
-                        <Input type={"text"} placeholder={"Descrição"} size={'x100'} />
+                        <Input type={"number"} placeholder={"Informe o tamanho"} size={'x100'} />
+                        
                     </div>
                     <div className={style.actions}>
                         <div className={style.btnSalvar} onClick={(e) => clickEvent(e, 'success')}>

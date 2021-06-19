@@ -55,6 +55,7 @@ const Login = () => {
                                     <Input type={"text"} placeholder={"Nome"} />
                                     <Input type={"text"} placeholder={"Email"} />
                                     <Input type={"text"} placeholder={"Telefone"} />
+                                    <Input type={"endereco"} placeholder={"Endereço"} />
                                     <Input type={"date"} placeholder={"Data de Nascimento"} />
                                   
                                   <label htmlFor="sexo">Sexo:</label> 
@@ -63,10 +64,10 @@ const Login = () => {
                                         <option value="feminino">Feminino</option>
                                         <option value="outros">Outros</option>
                                     </select>
-                                                                      
+                                                                    
 
                                     <Input type={"password"} placeholder={"Senha"} />
-                                    <Input type={"password"} placeholder={"Confirme sua senha"} />
+                                  
                                 </div>
                                 <div className={styles.boxActions}>
                                     <BtnCadastrar />
